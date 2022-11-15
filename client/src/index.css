@@ -1,0 +1,128 @@
+*{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+  overflow: overlay;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: none;
+}
+::-webkit-scrollbar-thumb{
+  background: purple;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(79, 6, 79);
+}
+li{
+  list-style: none;
+}  
+.link{
+  text-decoration: none;
+  color: white;
+}
+.hover{
+  transition: .3s ease-in-out;;  
+}
+.hover:hover{
+  color: purple;
+}
+.logo{
+  transition: .3s ease-in-out;
+}
+.logo > span{
+  color: purple;
+  transition: .3s ease-in-out;
+}
+.logo > span:hover{
+  color: rgb(198, 24, 198);
+}
+.btnLink{
+  padding: 10px 25px;
+  text-decoration: none;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.25);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.btnLink:hover{
+  background: rgb(95, 8, 95);
+}
+input{
+  padding: 8px 20px;
+  outline: none;
+  
+}
+.circle-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  clip-path: circle();
+  border-radius: 50%;
+  background: purple;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.circle-btn:hover{
+  background: rgb(98, 8, 98);
+}
+
+@keyframes updown{
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(5px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  75%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes shrinkgrow{
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(1.05);
+  }
+  50%{
+    transform: scale(1);
+  }
+  75%{
+    transform: scale(0.95);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.updown{
+  animation: 2s updown linear infinite;
+}
+.shrinkgrow{
+  animation: 2s shrinkgrow linear infinite;
+}

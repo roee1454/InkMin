@@ -1,0 +1,29 @@
+.nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  vertical-align: middle;
+  margin-left: 60px;
+}
+.logo-wrapper{
+  position: absolute;
+  left: 10%;
+}
+.accountTab-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+.accountTab-displayName{
+  margin-left: -20px;
+  padding: 15px;
+}
